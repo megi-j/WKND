@@ -1,0 +1,95 @@
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* header starts */
+header {
+    width: 100%;
+}
+.black-header{
+    width: 100%;
+    background-color: #202020;
+}
+.account p {
+    color: #909090;
+}
+.account{
+    width: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+/* damaluli forma */
+.sign{
+    width: 10%;
+    /* background-color: darkcyan; */
+    height: 0;
+    transition: all 0.3s;
+    position: absolute;
+    right: 0;
+}
+.name, .password, .signIn {
+    opacity: 0;
+    transition: all 0.3s;
+}
+.height {
+    height: 100px;
+}
+.opacity {
+    opacity: 1;
+}
+.white-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.logo{
+    color: #202020;
+    font-size: 48px;
+    background-color: #909090;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.white-header ul{
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #909090;
+}
+.search {
+    width: 10%;
+    position: relative;
+    background-color: #EBEBEB;
+    
+}
+.search input {
+    width: 0;
+    transition: all 0.3s;
+    border: 0;
+    height: 25px;
+    
+}
+.search button{
+    width: 15%;
+    border: 0;
+    cursor: pointer;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.search input.active {
+    width: 85%;
+}
+.search input:focus{
+    outline: none;
+}
+
+/* პირველი სექცია დაიწყო */
