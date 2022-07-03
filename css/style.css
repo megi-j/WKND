@@ -53,7 +53,6 @@ header {
 .logo{
     color: #202020;
     font-size: 48px;
-    background-color: #909090;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -61,7 +60,6 @@ header {
     width: 440px;
     display: flex;
     justify-content: space-between;
-    background-color: #909090;
 }
 .search {
     width: 10%;
@@ -93,3 +91,38 @@ header {
 }
 
 /* პირველი სექცია დაიწყო */
+.first-section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.first-section img{
+    width: 100%;
+}
+.adventures {
+    width: 70%;
+    height: 30%;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    padding: 24px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.adventures h4{
+    font-size: 40px;
+   
+}
+.adventures p{
+    font-size: 20px;
+}
+.adventures button{
+    width: 154px;
+    font-size: 14px;
+    border: none;
+    padding: 14px 16px;
+    background-color: #FFEB00;
+}
