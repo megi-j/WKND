@@ -103,3 +103,77 @@ rightArrow.addEventListener('click', function(){
 leftArrow.addEventListener('click', function(){
     prev()
 })
+
+// მესამე სექცია
+let cardsInfo = [
+    {
+        image: "images/first.png",
+        title: "ULTIMATE GUIDE TO LA SKATEPARKS"
+        
+    },
+    {
+        image: "images/second.png",
+        title: "SKIITOURING",
+        subTitle: "Sofia Sjöberg"
+    },
+    {
+        image: "images/third.png",
+        title: "ARCTIC SURFING",
+        subTitle: "Jacob Wester"
+    },
+    {
+        image: "images/fourth.png",
+        title: "SAN DIEGO SURF SPOTS",
+        subTitle: "Justin Barr"
+    }
+]
+let cards = document.querySelector('.cards')
+for(let i = 0; i< cardsInfo.length; i++){
+    let card = document.createElement('div');
+    card.classList.add('card');
+    card.classList.add(`card${i}`);
+    cards.appendChild(card)
+
+    let img  = document.createElement('img');
+    img.src = cardsInfo[i].image;
+    card.appendChild(img);
+
+    let title = document.createElement('h5');
+    title.innerHTML = cardsInfo[i].title;
+    card.appendChild(title);
+
+    let subTitle = document.createElement("h6");
+    subTitle.innerHTML = cardsInfo[i].subTitle;
+    subTitle.classList.add('subTitle')
+    card.appendChild(subTitle)
+}
+let gif = document.querySelector('.gif');
+let card0 = document.querySelector('.card0');
+let card1 = document.querySelector('.card1');
+let card2 = document.querySelector('.card2');
+let card3 = document.querySelector('.card3');
+window.addEventListener('scroll', function(){
+    let scrollTop = document.querySelector('html').scrollTop;
+    if(scrollTop > 1100){
+        setTimeout(function(){
+            
+            setInterval(()=>{
+                gif.style.display = "none";             
+                card0.style.opacity = "1";
+                setInterval(()=>{
+                    card1.style.opacity = "1"
+                    setInterval(()=>{
+                        card2.style.opacity = "1"   
+                        setInterval(()=>{
+                            card3.style.opacity = "1"  
+                        },1000)   
+                    }, 1000)
+                }, 1000)
+                
+            },1000)
+            
+        }, 500)
+        
+    }
+
+})
