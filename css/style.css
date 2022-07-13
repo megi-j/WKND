@@ -24,14 +24,13 @@ header {
     padding-bottom: 10px;
     cursor: pointer;
 }
-/* damaluli forma */
+/* დამალული ფორმა */
 .sign{
-    width: 10%;
-    /* background-color: darkcyan; */
+    /* width: 5%; */
     height: 0;
     transition: all 0.3s;
     position: absolute;
-    right: 0;
+    right: 10px;
 }
 .name, .password, .signIn {
     opacity: 0;
@@ -271,4 +270,57 @@ header {
     height: 2px;
     background-color: #EBEBEB;
     border-radius: 1px;
+    margin-bottom: 48px;
+}
+
+/* მეოთხე სექცია დაიწყო */
+
+.next-adventures {
+    width: 100%;
+    margin: 48px auto;
+   
+    
+}
+.next-adventures h2{
+    font-size: 36px;
+    
+}
+.climbing{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 62px;
+}
+.next-adventures img {
+    width: 100%;
+}
+
+.white {
+    width: 60%;
+    padding: 24px;
+    position: absolute;
+    bottom: -4px;
+    background-color: #fff;
+    /* display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-content: space-between;  */
+}
+.white h4 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+.white p {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.white button{
+    width: 155px;
+    height: 48px;
+    background-color: #FFEB00;
+    border: none;
+    font-size: 14px;
 }
