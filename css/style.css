@@ -16,6 +16,9 @@ header {
 }
 .account p {
     color: #909090;
+    font-family: 'Source Sans Pro-sm';
+    font-size: 14px;
+    margin-left: 9px;
 }
 .account{
     width: 6%;
@@ -57,11 +60,18 @@ header {
     font-size: 48px;
     padding-top: 60px;
     padding-bottom: 60px;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
 }
 .white-header ul{
     width: 440px;
     display: flex;
     justify-content: space-between;
+}
+.white-header li {
+    font-size: 14px;
+    font-family: 'Source Sans Pro-sm';
+    color: #202020;
 }
 .search {
     width: 10%;
@@ -117,14 +127,16 @@ header {
 }
 .adventures h4{
     font-size: 40px;
-   
+    font-family: 'Source Sans Pro-reg';
 }
 .adventures p{
     font-size: 20px;
+    font-family: 'Source Sans Pro-reg';
 }
 .adventures button{
     width: 154px;
     font-size: 14px;
+    font-family: 'Source Sans Pro-sm';
     border: none;
     padding: 14px 16px;
     background-color: #FFEB00;
@@ -203,6 +215,7 @@ header {
 .info h2{
     font-size: 36px;
     margin-bottom: 4%;
+    font-family: 'Source Sans Pro-reg';
 }
 .info div{
     width: 84px;
@@ -216,15 +229,20 @@ header {
     background-color: #FFEB00;
     border: none;
     font-size: 14px;
+    font-family: 'Source Sans Pro-sm';
+
 }
 .info h4{
     font-size: 24px;
     margin-bottom: 5%;
+    font-family: 'Source Sans Pro-reg';
+
 }
 .info p{
     font-size: 14px;
     margin-bottom: 50%;
     line-height: 28px;
+    font-family: 'Source Sans Pro-reg';
 }
 /* მესამე სექცია დაიწყო */
 .recent-articles{
@@ -234,6 +252,8 @@ header {
 .recent-articles h2{
     font-size: 36px;
     padding: 12px;
+    font-family: 'Source Sans Pro-reg';
+
 }
 .line{
     width: 84px;
@@ -259,6 +279,11 @@ header {
     opacity: 0;
     transition: all 3s;
 }
+.card h5{
+    font-size: 16px;
+    font-family: 'Source Sans Pro-sm';
+
+}
 
 .gif{
     display: flex;
@@ -267,6 +292,8 @@ header {
 .subTitle{
     font-size: 10px;
     color: #909090;
+    font-family: 'Source Sans Pro-sm';
+
 }
 .full-line{
     width: 100%;
@@ -286,7 +313,8 @@ header {
 }
 .next-adventures h2{
     font-size: 36px;
-    
+    font-family: 'Source Sans Pro-reg';
+
 }
 .climbing{
     width: 100%;
@@ -316,9 +344,12 @@ header {
 .white h4 {
     font-size: 40px;
     margin-bottom: 12px;
+    font-family: 'Source Sans Pro-reg';
+
 }
 .white p {
     font-size: 20px;
+    font-family: 'Source Sans Pro-reg';
     margin-bottom: 12px;
 }
 .white button{
@@ -327,6 +358,7 @@ header {
     background-color: #FFEB00;
     border: none;
     font-size: 14px;
+    font-family: 'Source Sans Pro-sm';
 }
 /* მეხუთე სექცია დაიწყო */
 .where-do-you-want-to-go{
@@ -335,6 +367,8 @@ header {
 }
 .where-do-you-want-to-go h4 {
     font-size: 24px;
+    font-family: 'Source Sans Pro-reg';
+
 }
 .country-cards {
     width: 100%;
@@ -357,9 +391,12 @@ header {
 }
 .single-card h5{
     font-size: 16px;
+    font-family: 'Source Sans Pro-sm';
+
 }
 .single-card p {
     font-size: 10px;
+    font-family: 'Source Sans Pro-sm';
     color: #909090;
 }
 /* მეექვსე სექცია დაიწყო */
@@ -389,10 +426,11 @@ header {
 }
 .email-info h4 {
     font-size: 40px;
-    
+    font-family: 'Source Sans Pro-reg';
 }
 .email-info p {
     font-size: 14px;
+    font-family: 'Source Sans Pro-reg';
 }
 .email {
     width: 236px;
@@ -407,12 +445,9 @@ header {
     background-color: #202020;
     color: #fff;
     cursor: pointer;
+    font-size: 14px;
+    font-family: 'Source Sans Pro-sm';
 }
-/* form {
-    width: 389px;
-    height: 48px;
-    border: 1px solid red;
-} */
 .form {
     width: 389px;
     height: 48px;
@@ -421,6 +456,8 @@ header {
 }
 ::placeholder{
     text-align: center;
+    font-size: 14px;
+    font-family: 'Source Sans Pro-sm';
 }
 .none {
     display: none;
@@ -436,4 +473,69 @@ header {
 }
 .block{
     display: block;
+}
+/* ფუტერი  */
+footer {
+    width: 100%;
+    height: 234px;
+    background-color: #202020;
+    margin-top: 72px;
+    padding-bottom: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.footer-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.footer-header .footer-logo{
+    color: #EBEBEB;
+    font-size: 48px;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+}
+.footer-header ul {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-header li {
+    font-size: 14px;
+    color: #909090;
+}
+.footer-header .icons{
+    width: 144px;
+    height: 48px;
+    display: flex;
+}
+.footer-header .icons div{
+    width: 48px;
+    height: 48px;
+    background-color: #EBEBEB;
+    border-left: 1px solid #707070;
+    border-right: 1px solid #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    color: #909090;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: 'Source Sans Pro-sm';
+}
+footer li:first-child {
+    color: #fff;
+}
+footer li{
+    font-size: 14px;
+    font-family: 'Source Sans Pro-sm';
+
 }

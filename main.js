@@ -265,11 +265,11 @@ button.addEventListener('click', function(e){
     e.preventDefault()
     arr.push(email.value)
     if(email.value.length > 6 && arr[0].includes("@")){
-        email.classList.add('none')
-        goodResult.classList.add("block")
+        email.classList.toggle('none')
+        goodResult.classList.toggle("block")
     }else{
-        email.classList.add('none')
-        badResult.classList.add('block')
+        email.classList.toggle('none')
+        badResult.classList.toggle('block')
     }
 })
 
