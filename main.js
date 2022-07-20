@@ -1,4 +1,4 @@
-// header starts
+// ჰედერი
 function account(){
     let account = document.querySelector('.account');
     let sign = document.querySelector(".sign")
@@ -177,3 +177,99 @@ window.addEventListener('scroll', function(){
     }
 
 })
+//მეოთხე სექცია
+let climbingBox = [
+    {
+        image: 'images/WKND.png',
+        title: "Climbing New Zealand",
+        text: "Let us help you make your New Zealand climbing vacation a memory you will cherish forever! Come join us for a guided rock climbing adventure in the mountains that trained Sir Edmund Hilary."
+    }
+]
+let climbingTitle = document.querySelector('.white h4');
+climbingTitle.innerText = climbingBox[0].title;
+let climbingText = document.querySelector(".white p");
+climbingText.innerText = climbingBox[0].text;
+let climbingImg = document.querySelector('.climbing img');
+climbingImg.src = climbingBox[0].image;
+
+
+
+// მეხუთე სექცია
+let countryCards = [
+    {
+        image: 'images/mountain.png',
+        title: 'WHISTLER MOUNTAIN BIKING',
+        text: 'CYCLING',
+        id: 0
+    },
+    {
+        image: 'images/image1.png',
+        title: 'SURF CAMP IN COSTA RICA',
+        text: "Surfing",
+        id: 1
+    },
+    {
+        image: 'images/image2.png',
+        title: 'SKI TOURING MONT BLANC',
+        text: 'SKIING',
+        id: 2
+    },
+    {
+        image: 'images/image3.png',
+        title: 'RIVERSIDE CAMPING',
+        text: 'CAMPING',
+        id: 3
+    }
+]
+let countryCard = document.querySelector('.country-cards');
+let nextAdventureBackground = document.querySelector('.climbing img');
+let whiteTitle = document.querySelector('.white h4');
+
+for(let i = 0; i < countryCards.length; i++){
+    let allCards = document.createElement('div');
+    allCards.classList.add('single-card');
+    countryCard.appendChild(allCards);
+
+    let countryCardsImg = document.createElement('img');
+    countryCardsImg.src = countryCards[i].image;
+    allCards.appendChild(countryCardsImg);
+
+    let countryCardsTitle = document.createElement('h5');
+    countryCardsTitle.innerHTML = countryCards[i].title;
+    allCards.appendChild(countryCardsTitle)
+
+    let countryCardsText = document.createElement("p");
+    countryCardsText.innerHTML = countryCards[i].text;
+    allCards.appendChild(countryCardsText)
+    
+    allCards.addEventListener('click', function(){
+        climbingImg.src = countryCards[i].image;
+        climbingTitle.innerText = countryCards[i].title;
+        climbingText.innerText = countryCards[i].text;
+    })
+
+}
+let countryCardsImgAll = document.querySelectorAll('.single-card img'); 
+let countryCardsTitleAll = document.querySelectorAll('.single-card h5');
+let allCardsAll = document.querySelectorAll('.single-card');
+
+// მეექვსე სექცია 
+
+let email = document.querySelector('.email');
+let button = document.querySelector('.button');
+let form = document.querySelector('.form')
+let arr = [];
+let goodResult = document.querySelector('.green')
+let badResult = document.querySelector('.red')
+button.addEventListener('click', function(e){
+    e.preventDefault()
+    arr.push(email.value)
+    if(email.value.length > 6 && arr[0].includes("@")){
+        email.classList.add('none')
+        goodResult.classList.add("block")
+    }else{
+        email.classList.add('none')
+        badResult.classList.add('block')
+    }
+})
+

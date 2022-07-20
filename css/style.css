@@ -1,9 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
 .container {
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
 }
-/* header starts */
+/* ჰედერი დაიწყო */
 header {
     width: 100%;
 }
@@ -302,8 +305,9 @@ header {
     width: 60%;
     padding: 24px;
     position: absolute;
-    bottom: -4px;
+    bottom: -0.5px;
     background-color: #fff;
+    border-bottom: 1px solid black;
     /* display: flex;
     flex-direction: column; 
     justify-content: space-between;
@@ -323,4 +327,113 @@ header {
     background-color: #FFEB00;
     border: none;
     font-size: 14px;
+}
+/* მეხუთე სექცია დაიწყო */
+.where-do-you-want-to-go{
+    width: 80%;
+    margin: 72px auto;
+}
+.where-do-you-want-to-go h4 {
+    font-size: 24px;
+}
+.country-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 48px;
+}
+.single-card {
+    width: 256px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    
+}
+.single-card img {
+    width: 100%;
+}
+.single-card h5{
+    font-size: 16px;
+}
+.single-card p {
+    font-size: 10px;
+    color: #909090;
+}
+/* მეექვსე სექცია დაიწყო */
+.validation-section {
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+
+}
+.validation-section .photo {
+    width: 30%;
+    
+}
+.photo img {
+    width: 100%;
+}
+.email-info{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+
+}
+.email-info h4 {
+    font-size: 40px;
+    
+}
+.email-info p {
+    font-size: 14px;
+}
+.email {
+    width: 236px;
+    height: 48px;
+    background-color: #EBEBEB;
+    border: none;
+    
+}
+.button{
+    width: 133px;
+    height: 48px;
+    background-color: #202020;
+    color: #fff;
+    cursor: pointer;
+}
+/* form {
+    width: 389px;
+    height: 48px;
+    border: 1px solid red;
+} */
+.form {
+    width: 389px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+::placeholder{
+    text-align: center;
+}
+.none {
+    display: none;
+}
+
+.green {
+    color: green;
+    display: none;
+}
+.red{
+    color: red;
+    display: none;
+}
+.block{
+    display: block;
 }
