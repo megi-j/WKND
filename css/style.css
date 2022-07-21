@@ -19,6 +19,10 @@ header {
     font-family: 'Source Sans Pro-sm';
     font-size: 14px;
     margin-left: 9px;
+    transition: all 0.3s;
+}
+.account p:hover {
+    color: #fff;
 }
 .account{
     width: 6%;
@@ -32,18 +36,26 @@ header {
 }
 /* დამალული ფორმა */
 .sign{
-    /* width: 5%; */
+    width: 20%;
     height: 0;
     transition: all 0.3s;
     position: absolute;
     right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.3);
 }
+
 .name, .password, .signIn {
     opacity: 0;
     transition: all 0.3s;
+    height: 30px;
 }
 .height {
-    height: 100px;
+    height: 20%;
 }
 .opacity {
     opacity: 1;
@@ -72,6 +84,16 @@ header {
     font-size: 14px;
     font-family: 'Source Sans Pro-sm';
     color: #202020;
+    transition: all 0.3s;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.white-header li:hover{
+    opacity: 1;
+    font-size: 20px;
+}
+.fontSize {
+    font-size: 20px;
 }
 .search {
     width: 10%;
@@ -108,6 +130,7 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
+   
 }
 .first-section img{
     width: 100%;
@@ -508,6 +531,12 @@ footer {
 .footer-header li {
     font-size: 14px;
     color: #909090;
+    font-family: 'Source Sans Pro-sm';
+    transition: all 0.3s;
+}
+.footer-header li:hover{
+    color: #fff;
+    cursor: pointer;
 }
 .footer-header .icons{
     width: 144px;
@@ -523,6 +552,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
+}
+.footer-header .icons div:hover {
+    background-color: #F6E40A;
 }
 .copyright{
     color: #909090;
@@ -530,12 +563,4 @@ footer {
     margin: 0 auto;
     font-size: 14px;
     font-family: 'Source Sans Pro-sm';
-}
-footer li:first-child {
-    color: #fff;
-}
-footer li{
-    font-size: 14px;
-    font-family: 'Source Sans Pro-sm';
-
 }
